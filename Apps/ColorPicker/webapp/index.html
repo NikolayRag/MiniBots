@@ -63,11 +63,21 @@ return new iro.ColorPicker(_el, {
 </body>
 
 <script>
+/*
 	var inDataA = location.hash.split('?')[0].substr(1).split(',');
 
+  CPNew('#color0', {r: inDataA[0], g: inDataA[2], b: inDataA[3]}),
+  CPNew('#color1', {r: inDataA[1], g: inDataA[3], b: inDataA[5]}),
+*/
+const p = new URLSearchParams(location.search);
+
+var c1 = p.get("c1") || "#000000";
+var c2 = p.get("c2") || "#FFFFFF";
+
+
 	var colorPickers = [
-		CPNew('#color0', {r: inDataA[0], g: inDataA[2], b: inDataA[3]}),
-		CPNew('#color1', {r: inDataA[1], g: inDataA[3], b: inDataA[5]}),
+		CPNew('#color0', c1),
+		CPNew('#color1', c2),
 	];
 
 	
