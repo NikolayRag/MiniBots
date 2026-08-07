@@ -1,6 +1,8 @@
 # Small Tools TG Bots collection
 
 
-### Tools
+```
+Tools
+	@colorpicker_minibot
 
-* @colorpicker_minibot
+```
