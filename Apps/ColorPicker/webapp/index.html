@@ -1,6 +1,47 @@
+
+
 <!DOCTYPE html>
 <html>
   <head>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 40px;
+      background: #222;
+      color: white;
+      font-family: sans-serif;
+    }
+
+    .pickers {
+      display: flex;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    .picker {
+      width: 200px;
+    }
+
+    .gradient {
+      width: 100%;
+      height: 180px;
+      border-radius: 16px;
+      background: linear-gradient(
+        90deg,
+        #15caf2,
+        #fb380e
+      );
+    }
+
+    .values {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 12px;
+      font-family: monospace;
+    }
+  </style>
+
 
 <script src="https://telegram.org/js/telegram-web-app.js"></script>
 <script src="iro.min.js"></script>
@@ -57,9 +98,24 @@ return new iro.ColorPicker(_el, {
 
   </head>
   <body>
-	<div id='title'></div>
-	<div id='color0'></div>
-	<div id='color1'></div>
+
+  <div class="pickers">
+    <div class="picker">
+      <div id="picker1"></div>
+    </div>
+
+    <div class="picker">
+      <div id="picker2"></div>
+    </div>
+  </div>
+
+  <div id="gradient" class="gradient"></div>
+
+  <div class="values">
+    <span id="value1"></span>
+    <span id="value2"></span>
+  </div>
+
 </body>
 
 <script>
@@ -76,11 +132,33 @@ var c2 = p.get("c2") || "#FFFFFF";
 
 
 	var colorPickers = [
-		CPNew('#color0', c1),
-		CPNew('#color1', c2),
+		CPNew('#picker1', c1),
+		CPNew('#picker2', c2),
 	];
 
-	
+    const gradient = document.querySelector("#gradient");
+    const value1 = document.querySelector("#value1");
+    const value2 = document.querySelector("#value2");
+
+    function updateGradient() {
+      const color1 = colorPickers[0].color.hexString;
+      const color2 = colorPickers[1].color.hexString;
+
+      gradient.style.background =
+        `linear-gradient(90deg, ${color1}, ${color2})`;
+
+      value1.textContent = color1;
+      value2.textContent = color2;
+    }
+
+    setInterval(updateGradient, 20);
+//    picker1.on("color:change", updateGradient);
+//    picker2.on("color:change", updateGradient);
+
+    updateGradient();
+
+/////////
+
 	Telegram.WebApp.MainButton.show();
 	Telegram.WebApp.MainButton.enable();
 	Telegram.WebApp.onEvent('mainButtonClicked', function(){
