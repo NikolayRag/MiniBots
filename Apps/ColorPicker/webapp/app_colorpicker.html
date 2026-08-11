@@ -1,0 +1,38 @@
+
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>TGOS ColorPicker</title>
+<link rel="stylesheet" href="app_colorpicker.css">
+</head>
+<body>
+<div class="app">
+  <div class="top"><button class="back">‹</button></div>
+  <div class="samples" id="samples"></div>
+  <div class="canvas-wrap">
+    <div class="plane-stack" id="planeStack"></div>
+    <div id="markers"></div>
+  </div>
+  <div class="hue-wrap">
+    <div class="strip-stack" id="stripStack"></div>
+    <div id="hueMarkers"></div>
+  </div>
+  <div class="bottom"><button class="details-btn" id="detailsBtn">☷</button></div>
+
+  <section class="details hidden" id="details">
+    <div class="detail-head"><span class="detail-title">Color</span><button class="close" id="closeDetails">×</button></div>
+    <div class="row"><span class="label">Space</span><select class="select" id="space"></select></div>
+    <div class="row"><span class="label">Strip</span><select class="select" id="strip"></select></div>
+    <div class="row"><span class="label">Values</span><div class="value-grid" id="values"></div></div>
+    <div class="row" style="display:block"><span class="label">Gradient</span><div class="mini-gradient" id="gradient"></div></div>
+    <div class="row" style="display:block"><span class="label">Harmony</span><div class="harmony" id="harmony"></div></div>
+    <div class="row" style="display:block"><span class="label">Presets</span><div class="presets" id="presets"></div></div>
+    <p class="hint">Canonical state: linear RGB. Each sample owns its rendered plane and strip canvas.</p>
+  </section>
+</div>
+
+<script src="app_colorpicker.js"></script>
+</body>
+</html>
