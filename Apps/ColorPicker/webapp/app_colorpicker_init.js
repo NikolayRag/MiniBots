@@ -1,3 +1,12 @@
+function log(_msg){
+	if (!testcontent)
+		return;
+
+	testcontent.innerHTML += `<br><br>${_msg}`;
+}
+
+
+
 const tg = window.Telegram?.WebApp;
 
 if (!tg) {
@@ -6,9 +15,17 @@ if (!tg) {
 
 tg.ready();
 
+
+if (typeof tg.disableVerticalSwipes === 'function') {
+	try {
+		tg.disableVerticalSwipes();
+	} catch(e) log(e);
+}
+
+
 if (typeof tg.requestFullscreen === 'function') {
 	try {
 		tg.requestFullscreen();
-	} catch(e) catch(e){testcontent?.innerHTML=`${e}`;}
+	} catch(e) log(e);
 }
 
