@@ -1,10 +1,3 @@
-function catchLog(_msg){
-	if (!testcontent)
-		return;
-
-	testcontent.innerHTML += `<br><br>${_msg}`;
-}
-
 
 
 const tg = window.Telegram?.WebApp;
@@ -16,6 +9,11 @@ if (!tg) {
 tg.ready();
 
 
+if (typeof tg.disableVerticalSwipes === 'function') {
+	try {
+		tg.disableVerticalSwipes();
+	} catch(e) testcontent.innerHTML += `<br><br>${e}`;;
+}
 
 
 if (typeof tg.requestFullscreen === 'function') {
