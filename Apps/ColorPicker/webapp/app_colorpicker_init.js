@@ -1,4 +1,4 @@
-function log(_msg){
+function catchLog(_msg){
 	if (!testcontent)
 		return;
 
@@ -19,13 +19,13 @@ tg.ready();
 if (typeof tg.disableVerticalSwipes === 'function') {
 	try {
 		tg.disableVerticalSwipes();
-	} catch(e) log(e);
+	} catch(e) catchLog(e);
 }
 
 
 if (typeof tg.requestFullscreen === 'function') {
 	try {
 		tg.requestFullscreen();
-	} catch(e) log(e);
+	} catch(e) catchLog(e);
 }
 
