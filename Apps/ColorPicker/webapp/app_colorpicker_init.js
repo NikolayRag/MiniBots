@@ -9,6 +9,6 @@ tg.ready();
 if (typeof tg.requestFullscreen === 'function') {
   try {
     tg.requestFullscreen();
-  } catch(e){content.innerHTML=e;}
+  } catch(e){content.innerHTML=`<br><br>${e}`;}
 }
 
