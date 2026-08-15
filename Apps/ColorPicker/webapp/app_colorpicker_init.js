@@ -16,11 +16,6 @@ if (!tg) {
 tg.ready();
 
 
-if (typeof tg.disableVerticalSwipes === 'function') {
-	try {
-		tg.disableVerticalSwipes();
-	} catch(e) testcontent.innerHTML += `<br><br>${e}`;;
-}
 
 
 if (typeof tg.requestFullscreen === 'function') {
