@@ -10,12 +10,21 @@ tg.ready();
 
 
 
+if (typeof tg.disableVerticalSwipes === 'function') {
+	try {
+		tg.disableVerticalSwipes();
+	} catch(e) {
+		testcontent.innerHTML += `<br><br>disableVerticalSwipes ${e}`;
+	}
+}
+
+
 
 if (typeof tg.requestFullscreen === 'function') {
 	try {
 		tg.requestFullscreen();
 	} catch(e) {
-		testcontent.innerHTML += `<br><br>${e}`;
+		testcontent.innerHTML += `<br><br>requestFullscreen ${e}`;
 	}
 }
 
