@@ -13,8 +13,9 @@ tg.ready();
 if (typeof tg.disableVerticalSwipes === 'function') {
 	try {
 		tg.disableVerticalSwipes();
+		testcontent.innerHTML += `<br><br>disableVerticalSwipes`;
 	} catch(e) {
-		testcontent.innerHTML += `<br><br>disableVerticalSwipes ${e}`;
+		testcontent.innerHTML += `${e}`;
 	}
 }
 
@@ -23,8 +24,9 @@ if (typeof tg.disableVerticalSwipes === 'function') {
 if (typeof tg.requestFullscreen === 'function') {
 	try {
 		tg.requestFullscreen();
+		testcontent.innerHTML += `<br><br>requestFullscreen`;
 	} catch(e) {
-		testcontent.innerHTML += `<br><br>requestFullscreen ${e}`;
+		testcontent.innerHTML += `${e}`;
 	}
 }
 
