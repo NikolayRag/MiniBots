@@ -12,5 +12,10 @@ tg.ready();
 
 
 if (typeof tg.requestFullscreen === 'function') {
-	tg.requestFullscreen();
+	try {
+		tg.requestFullscreen();
+	} catch(e) {
+		testcontent.innerHTML += `<br><br>${e}`;
+	}
 }
+
