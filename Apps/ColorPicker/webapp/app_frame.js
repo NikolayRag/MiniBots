@@ -17,8 +17,6 @@ tg.ready();
 function errlog(e){
 	if (typeof logContainer != 'undefined')
 		logContainer.innerHTML += e;
-	if (typeof content != 'undefined')
-		content.innerHTML += e;
 }
 
 
