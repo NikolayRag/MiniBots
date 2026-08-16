@@ -15,9 +15,9 @@ tg.ready();
 
 
 function errlog(e){
-	if (logContainer)
+	if (typeof logContainer != 'undefined')
 		logContainer.innerHTML += e;
-	if (content)
+	if (typeof content != 'undefined')
 		content.innerHTML += e;
 }
 
