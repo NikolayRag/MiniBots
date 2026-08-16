@@ -4,12 +4,6 @@ disableVerticalSwipes
 requestFullscreen
 */
 
-function errlog(e){
-	if (logContainer)
-		logContainer.innerHTML += e;
-}
-
-
 
 const tg = window.Telegram?.WebApp;
 
@@ -19,6 +13,11 @@ if (!tg) {
 
 tg.ready();
 
+
+function errlog(e){
+	if (logContainer)
+		logContainer.innerHTML += e;
+}
 
 
 if (typeof tg.disableVerticalSwipes === 'function') {
