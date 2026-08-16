@@ -1,3 +1,14 @@
+/*
+ready
+disableVerticalSwipes
+requestFullscreen
+*/
+
+function errlog(e){
+	if (logContainer)
+		logContainer.innerHTML += e;
+}
+
 
 
 const tg = window.Telegram?.WebApp;
@@ -13,9 +24,9 @@ tg.ready();
 if (typeof tg.disableVerticalSwipes === 'function') {
 	try {
 		tg.disableVerticalSwipes();
-		testcontent.innerHTML += `<br><br>disableVerticalSwipes`;
+		errlog(`<br><br>disableVerticalSwipes`);
 	} catch(e) {
-		testcontent.innerHTML += `${e}`;
+		errlog(`${e}`);
 	}
 }
 
@@ -24,9 +35,9 @@ if (typeof tg.disableVerticalSwipes === 'function') {
 if (typeof tg.requestFullscreen === 'function') {
 	try {
 		tg.requestFullscreen();
-		testcontent.innerHTML += `<br><br>requestFullscreen`;
+		errlog(`<br><br>requestFullscreen`);
 	} catch(e) {
-		testcontent.innerHTML += `${e}`;
+		errlog(`${e}`);
 	}
 }
 
