@@ -28,6 +28,7 @@ body {
 	overscroll-behavior: none;
 
 	background: #444;
+	color:#ddd;
 }
 
 body {
@@ -70,5 +71,4 @@ body {
 	overflow: hidden;
 
 	touch-action: none;
-	color:#fff;
 }
