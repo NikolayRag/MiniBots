@@ -13,4 +13,4 @@ tg.ready();
 
 if (typeof tg.requestFullscreen === 'function') {
 	tg.requestFullscreen();
-
+}
