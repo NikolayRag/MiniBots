@@ -17,6 +17,8 @@ tg.ready();
 function errlog(e){
 	if (logContainer)
 		logContainer.innerHTML += e;
+	if (content)
+		content.innerHTML += e;
 }
 
 
