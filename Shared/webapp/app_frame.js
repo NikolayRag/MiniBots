@@ -40,3 +40,17 @@ if (typeof tg.requestFullscreen === 'function') {
   }
 }
 
+
+/*
+function fetchUserProfile(){
+  const response = await fetch('/api/context', {
+    headers: {
+      'X-Telegram-Init-Data': tg.initData
+    }
+  });
+
+  const context = await response.json();
+
+  errlog(`<br><br>${context}`);
+}
+*/
