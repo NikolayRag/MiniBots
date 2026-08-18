@@ -1,36 +1,40 @@
-#### ENVIRONMENT ###
-BOT_TOKEN  
+## ENVIRONMENT #
+
+###### BOT_TOKEN  
 .....
 
-TG_URL
+###### TG_URL  
 * https://api.telegram.org/bot
 
-WEBAPP_URL  
+###### WEBAPP_URL  
 * [base] https://nikolayrag.github.io/MiniBots/Apps/ColorPicker/webapp/
 
 * https://nikolayrag.github.io/MiniBots/Apps/ColorPicker/webapp/app_colorpicker.html
 
 
 
-#### Bots
+## Bots/Apps
+Bot  
+	Apps collection  
+	Apps list  
+		Main App/Menu button  
+
 * @account_minibot
-* todo @colors_minibot
-* todo @live_minibot
-* todo @letters_minibot
-* todo @numbers_minibot
-
-* @colorpicker_minibot
-
-#### Apps
-* 0 colorpicker
-* 1 dice
-* 1 timer
-* 2 tasks
-* ? QR
-* ? urlmonitor
+* @colors_minibot
+  * colorpicker
+* @live_minibot
+  * timer
+  * tasks
+  * urlmonitor
+* @letters_minibot
+  * QR
+* @numbers_minibot
+  * dice
 
 
-### Worker
+
+## Worker
+
 * https://minibots-colorpickers.nikolayr.workers.dev/
 
 ```

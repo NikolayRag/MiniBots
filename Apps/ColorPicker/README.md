@@ -1,17 +1,10 @@
 # Colorpicker TG bot with WebApp interface
 
 Colors are picked within webapp interface, then sent to TG.
-Then bot shows them in same reusable message as text and gradient image.
-And finally updates Webapp call button to store new state for next call.
+Then bot shows them in chat.
 
 
 ```
-Modules over TG
-	Bot Worker
-		Cloudflare
-	WebApp
-		Github
-
 State Data
 	Color 1, 2
 	Reusable Main message ID
@@ -24,7 +17,7 @@ Bot Worker
 		Init *State Data*
 		Maintain Message and Webapp Keyboard
 	WebApp reply
-?		Generate and upload stamps/gradient
+		Generate and upload stamps/gradient
 		Maintain Message and Webapp Keyboard
 	Any other message
 		Instant delete
