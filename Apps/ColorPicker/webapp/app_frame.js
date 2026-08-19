@@ -10,8 +10,8 @@ function errlog(e){
 }
 
 
-var inDataA = location.hash.split('?')[0].substr(1).split(',');
-console.log("test:", inDataA);
+var inDataA = new URLSearchParams(location.search);
+alert(inDataA);
 
 
 
