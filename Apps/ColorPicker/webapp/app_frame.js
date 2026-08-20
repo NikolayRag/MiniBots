@@ -16,10 +16,17 @@ async function fetchUserProfile(_initData){
 				'X-Telegram-Init-Data': _initData
 			}
 		});
-		errlog(`Fetch: ${response}`);
 	} catch(e){
 		errlog(`Fetch Error: ${e}`);
 	}
+
+	if (!response)
+		return;
+
+	respJson = await response.json();
+	errlog(`Fetch: ${respJson}`);
+
+	;
 }
 
 function errlog(e){
