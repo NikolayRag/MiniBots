@@ -9,7 +9,7 @@ requestFullscreen
 //// +FUNCTIONS
 
 
-function fetchUserProfile(_initData){
+async function fetchUserProfile(_initData){
   const response = await fetch('https://profile-minibot.nikolayr.workers.dev/', {
     headers: {
       'X-Telegram-Init-Data': _initData
@@ -57,7 +57,7 @@ if (typeof tg.requestFullscreen === 'function')
 
 
 
-cUser = fetchUserProfile(tg.initData);
+cUser = await fetchUserProfile(tg.initData);
 alert(JSON.stringify(cUser));
 
 
