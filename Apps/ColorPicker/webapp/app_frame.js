@@ -8,14 +8,21 @@ requestFullscreen
 
 //// +FUNCTIONS
 
-function fetchUserProfile(_initData){
-  const response = fetch('https://profile-minibot.nikolayr.workers.dev/', {
-    headers: {
-      'X-Telegram-Init-Data': _initData
-    }
-  });
-  if (response)
-  	return response.json();
+async function fetchUserProfile(_initData){
+	let response;
+	try{
+		response = await fetch('https://profile-minibot.nikolayr.workers.dev/', {
+			headers: {
+				'X-Telegram-Init-Data': _initData
+			}
+		});
+	} catch(e){
+		errlog(`Error: ${e}`);
+	}
+	errlog(`Fetch: ${JSON.stringify(response)}`);
+
+	if (response)
+		return await response.json();
 }
 
 function errlog(e){
@@ -55,14 +62,9 @@ if (typeof tg.requestFullscreen === 'function')
 
 
 errlog(`initData: ${JSON.stringify(tg.initData)}`);
-let cUser;
-try{
-	cUser = fetchUserProfile(tg.initData);
-} catch(e){
-	errlog(`Fetch Error: ${e}`);
-}
+let cUser = fetchUserProfile(tg.initData);
 
-errlog(`cUser: ${JSON.stringify(cUser)}`);
+//errlog(`cUser: ${JSON.stringify(cUser)}`);
 
 
 //Telegram.WebApp.sendData([rgb0.r, rgb1.r, rgb0.g, rgb1.g, rgb0.b, rgb1.b].join(',')); 
