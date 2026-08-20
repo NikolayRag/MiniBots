@@ -60,8 +60,9 @@ alert(JSON.stringify(tg.initData));
 let cUser;
 try{
 	cUser = fetchUserProfile(tg.initData);
-} catch(e)
+} catch(e){
 	alert(e);
+}
 
 alert(JSON.stringify(cUser));
 
