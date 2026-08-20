@@ -8,7 +8,7 @@ requestFullscreen
 
 //// +FUNCTIONS
 
-
+alert(1);
 function fetchUserProfile(_initData){
   const response = await fetch('https://profile-minibot.nikolayr.workers.dev/', {
     headers: {
@@ -55,7 +55,7 @@ if (typeof tg.requestFullscreen === 'function')
 	}
 
 
-
+skirt(2);
 alert(JSON.stringify(tg.initData));
 cUser = fetchUserProfile(tg.initData);
 alert(JSON.stringify(cUser));
