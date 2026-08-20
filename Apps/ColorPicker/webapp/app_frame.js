@@ -16,8 +16,8 @@ function fetchUserProfile(_initData){
       'X-Telegram-Init-Data': _initData
     }
   });
-
-  return await response.json();
+  if (response)
+  	return response.json();
 }
 
 function errlog(e){
