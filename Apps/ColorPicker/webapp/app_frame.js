@@ -22,7 +22,7 @@ async function fetchUserProfile(_initData){
 
 function errlog(e){
 	if (typeof logContainer != 'undefined')
-		logContainer.innerHTML += e;
+		logContainer.innerHTML += `<br><br>${e}`;
 }
 
 
@@ -40,7 +40,7 @@ tg.ready();
 if (typeof tg.disableVerticalSwipes === 'function')
 	try {
 		tg.disableVerticalSwipes();
-		errlog(`<br><br>disableVerticalSwipes`);
+		errlog(`disableVerticalSwipes`);
 	} catch(e) {
 		errlog(`${e}`);
 	}
@@ -50,7 +50,7 @@ if (typeof tg.disableVerticalSwipes === 'function')
 if (typeof tg.requestFullscreen === 'function')
 	try {
 		tg.requestFullscreen();
-		errlog(`<br><br>requestFullscreen`);
+		errlog(`requestFullscreen`);
 	} catch(e) {
 		errlog(`${e}`);
 	}
