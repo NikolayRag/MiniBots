@@ -8,8 +8,6 @@ requestFullscreen
 
 //// +FUNCTIONS
 
-alert(1);
-
 function fetchUserProfile(_initData){
   const response = fetch('https://profile-minibot.nikolayr.workers.dev/', {
     headers: {
@@ -56,15 +54,15 @@ if (typeof tg.requestFullscreen === 'function')
 	}
 
 
-alert(JSON.stringify(tg.initData));
+errlog(`initData: ${JSON.stringify(tg.initData)}`);
 let cUser;
 try{
 	cUser = fetchUserProfile(tg.initData);
 } catch(e){
-	alert(e);
+	errlog(`Fetch Error: ${e}`);
 }
 
-alert(JSON.stringify(cUser));
+errlog(`cUser: ${JSON.stringify(cUser)}`);
 
 
 //Telegram.WebApp.sendData([rgb0.r, rgb1.r, rgb0.g, rgb1.g, rgb0.b, rgb1.b].join(',')); 
