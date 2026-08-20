@@ -16,13 +16,13 @@
 
 	<script src="https://telegram.org/js/telegram-web-app.js"></script>
 
-	<link rel="stylesheet" href="app_frame.css">
-	<link rel="stylesheet" href="app_colorpicker.css">
+	<link rel="stylesheet" href="_app_frame.css">
+	<link rel="stylesheet" href="_app_colorpicker.css">
 </head>
 
 <body>
 
-	<main id="app">
+	<main id="app"><!-- place app from here - ->
   <div class="top"><button class="back">‹</button></div>
   <div class="samples" id="samples"></div>
   <div class="canvas-wrap">
@@ -44,11 +44,12 @@
     <div class="row" style="display:block"><span class="label">Harmony</span><div class="harmony" id="harmony"></div></div>
     <div class="row" style="display:block"><span class="label">Presets</span><div class="presets" id="presets"></div></div>
     <p class="hint">Canonical state: linear RGB. Each sample owns its rendered plane and strip canvas.</p>
-  </section>
+  </section> -->
+  <div id="logContainer" style="color:red;position:fixed;top:5em;">Content container, replace</div>
 	</main>
 
 </body>
 
 <script src="app_frame.js"></script>
-<script src="app_colorpicker.js"></script>
+<script src="_app_colorpicker.js"></script>
 </html>
