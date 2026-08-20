@@ -4,6 +4,21 @@ disableVerticalSwipes
 requestFullscreen
 */
 
+
+
+//// +FUNCTIONS
+
+
+function fetchUserProfile(_initData){
+  const response = await fetch('https://profile-minibot.nikolayr.workers.dev/', {
+    headers: {
+      'X-Telegram-Init-Data': _initData
+    }
+  });
+
+  return await response.json();
+}
+
 function errlog(e){
 	if (typeof logContainer != 'undefined')
 		logContainer.innerHTML += e;
@@ -39,6 +54,11 @@ if (typeof tg.requestFullscreen === 'function')
 		errlog(`${e}`);
 	}
 
+
+
+
+cUser = fetchUserProfile(tg.initData);
+alert(JSON.stringify(cUser));
 
 
 //Telegram.WebApp.sendData([rgb0.r, rgb1.r, rgb0.g, rgb1.g, rgb0.b, rgb1.b].join(',')); 
