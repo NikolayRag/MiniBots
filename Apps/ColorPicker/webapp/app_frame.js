@@ -24,7 +24,7 @@ async function fetchUserProfile(_initData){
 		return;
 
 	respJson = await response.json();
-	errlog(`Fetch: ${respJson}`);
+	errlog(`Fetch: ${JSON.stringify(respJson)}`);
 
 	;
 }
