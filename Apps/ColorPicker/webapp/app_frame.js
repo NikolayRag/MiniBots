@@ -58,9 +58,9 @@ if (typeof tg.requestFullscreen === 'function')
 
 alert(JSON.stringify(tg.initData));
 let cUser;
-try
+try{
 	cUser = fetchUserProfile(tg.initData);
-catch(e)
+} catch(e)
 	alert(e);
 
 alert(JSON.stringify(cUser));
