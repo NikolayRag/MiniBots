@@ -10,8 +10,8 @@ requestFullscreen
 
 alert(1);
 
-async function fetchUserProfile(_initData){
-  const response = await fetch('https://profile-minibot.nikolayr.workers.dev/', {
+function fetchUserProfile(_initData){
+  const response = fetch('https://profile-minibot.nikolayr.workers.dev/', {
     headers: {
       'X-Telegram-Init-Data': _initData
     }
