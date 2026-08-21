@@ -20,13 +20,7 @@ async function fetchUserProfile(_initData){
 		errlog(`Fetch Error: ${e}`);
 	}
 
-	if (!response)
-		return;
-
-	respJson = await response.json();
-	errlog(`Fetch: ${JSON.stringify(respJson)}`);
-
-	;
+	errlog(`Fetch: ${response.status}; ${await response.text()}`);
 }
 
 function errlog(e){
