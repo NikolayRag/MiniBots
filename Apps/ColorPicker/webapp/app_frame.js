@@ -21,7 +21,7 @@ async function fetchUserProfile(_initData, _botName){
 		errlog(`Fetch Error: ${e}`);
 	}
 
-	errlog(`Fetch: ${response.status}; ${await response.text()}`);
+	response && errlog(`Fetch: ${response.status}; ${await response.text()}`);
 }
 
 function errlog(e){
