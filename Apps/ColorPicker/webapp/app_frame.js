@@ -60,8 +60,7 @@ if (typeof tg.requestFullscreen === 'function')
 	}
 
 
-errlog(`initData: ${JSON.stringify(tg.initData)}`);
-
+errlog(`initData: ${decodeURIComponent(JSON.stringify(tg.initData))}`);
 fetchUserProfile(tg.initData, botBound);
 
 //Telegram.WebApp.sendData([rgb0.r, rgb1.r, rgb0.g, rgb1.g, rgb0.b, rgb1.b].join(',')); 
