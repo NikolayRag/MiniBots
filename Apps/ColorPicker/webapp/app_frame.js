@@ -8,12 +8,13 @@ requestFullscreen
 
 //// +FUNCTIONS
 
-async function fetchUserProfile(_initData){
+async function fetchUserProfile(_initData, _botName){
 	let response;
 	try{
 		response = await fetch('https://minibot-authgate.nikolayr.workers.dev/', {
 			headers: {
-				'X-Telegram-Init-Data': _initData
+				'X-Telegram-Init-Data': _initData,
+				'bound-to-bot': _botName
 			}
 		});
 	} catch(e){
@@ -60,7 +61,7 @@ if (typeof tg.requestFullscreen === 'function')
 
 
 errlog(`initData: ${JSON.stringify(tg.initData)}`);
-fetchUserProfile(tg.initData);
 
+fetchUserProfile(tg.initData, botBound);
 
 //Telegram.WebApp.sendData([rgb0.r, rgb1.r, rgb0.g, rgb1.g, rgb0.b, rgb1.b].join(',')); 
