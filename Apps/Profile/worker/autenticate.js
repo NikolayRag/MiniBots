@@ -18,10 +18,6 @@ export async function authenticate(_initData, _botToken) {
 	if (!Number.isFinite(authDate))
 		return ('Invalid auth_date');
 
-//	const userRaw = params.get('user');
-//	if (!userRaw)
-//		return ('Missing user');
-
 	params.delete('hash');
 
 	const dataCheckString = [...params.entries()]
