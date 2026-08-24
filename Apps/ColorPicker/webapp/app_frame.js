@@ -8,7 +8,7 @@ requestFullscreen
 
 //// +FUNCTIONS
 
-async function fetchUserProfile(_initData, _botName){
+async function procceedAuthenticate(_initData, _botName){
 	errlog(`"${_botName}" initData: ${decodeURIComponent(JSON.stringify(tg.initData))}`);
 
 	let response;
@@ -62,6 +62,6 @@ if (typeof tg.requestFullscreen === 'function')
 	}
 
 
-fetchUserProfile(tg.initData, botBound);
+procceedAuthenticate(tg.initData, botBound);
 
 //Telegram.WebApp.sendData([rgb0.r, rgb1.r, rgb0.g, rgb1.g, rgb0.b, rgb1.b].join(',')); 
