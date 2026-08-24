@@ -10,9 +10,12 @@
 -ux, colorpicker, manage 5: +0 "Apps\SPECs.md" Ki 26/08/16 05:47:44
 	make return harmonic palette as an experemental feature (extended candidate /testers should have pro reward/)
 
--profile 6: +0 "Apps\SPECs.md" Ki 26/08/16 05:47:18
-	bind pro state to extended features
+=profile 6: +0 "Apps\SPECs.md" Ki 26/08/24 12:53:46
+	bind pro state to extended features  
 
- manage 7: +0 "Apps\SPECs.md" Ki 26/08/16 05:47:15
+ promote 7: +0 "Apps\SPECs.md" Ki 26/08/24 12:53:46
 	spam minipots
+
+-worker, template, web_app 8: +0 "Apps\ColorPicker\worker\tgbot-getcolors.js" Ki 26/08/16 06:26:35
+	make standalone app capable of sending message to bot (requestWriteAccess)
 
