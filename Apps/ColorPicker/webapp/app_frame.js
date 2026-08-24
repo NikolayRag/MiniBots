@@ -9,7 +9,7 @@ requestFullscreen
 //// +FUNCTIONS
 
 async function fetchUserProfile(_initData, _botName){
-	errlog(`${_botName} bot initData: ${decodeURIComponent(JSON.stringify(tg.initData))}`);
+	errlog(`"${_botName}" initData: ${decodeURIComponent(JSON.stringify(tg.initData))}`);
 
 	let response;
 	try{
