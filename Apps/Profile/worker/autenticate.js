@@ -4,23 +4,18 @@ Args:
 	_botToken: corresponding token, should be secret
 */
 
-export async function authenticate(_initData, _botToken) {
-	if (!_initData)
-		return ('Missing initData');
-
-	const params = new URLSearchParams(_initData);
-
-	const paramsHash = params.get('hash');
+export async function authenticate(_initData, _botToken, timeLimit=120) {
+	const paramsHash = _initData.get('hash');
 	if (!paramsHash)
 		return ('Missing hash');
 
-	const authDate = Number(params.get('auth_date'));
+	const authDate = Number(_initData.get('auth_date'));
 	if (!Number.isFinite(authDate))
 		return ('Invalid auth_date');
 
-	params.delete('hash');
+	_initData.delete('hash');
 
-	const dataCheckString = [...params.entries()]
+	const dataCheckString = [..._initData.entries()]
 		.sort(([a], [b]) => a.localeCompare(b))
 		.map(([key, value]) => `${key}=${value}`)
 		.join('\n');
@@ -66,7 +61,6 @@ export async function authenticate(_initData, _botToken) {
 	if (!timingSafeEqual(calculatedHex, paramsHash))
 		return ('Invalid hash');
 
-	const timeLimit = 120;
 	if (Math.floor(Date.now() / 1000) - authDate > timeLimit)
 		return ('Expired initData');
 }
