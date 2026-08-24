@@ -1,7 +1,12 @@
 /*
-ready
-disableVerticalSwipes
-requestFullscreen
+Flow
+	TG ready
+	Init ui/ux
+	Procceed with authentication
+
+Init ui/ux
+	disableVerticalSwipes
+	requestFullscreen
 */
 
 
@@ -33,6 +38,7 @@ function errlog(e){
 
 
 
+//// -FUNCTIONS
 
 
 

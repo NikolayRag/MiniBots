@@ -1,7 +1,8 @@
 /*
 Args:
-	_initData: tg.initData from Webapp
+	_initData: tg.initData from Webapp as URLSearchParams
 	_botToken: corresponding token, should be secret
+	timeLimit: restrict limit
 */
 
 export async function authenticate(_initData, _botToken, timeLimit=120) {

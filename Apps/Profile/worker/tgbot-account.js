@@ -1,10 +1,12 @@
 /*
 
-
 Flow branches
 	/start
+		sendInvoice
 	update.pre_checkout_query
+		answerPreCheckoutQuery
 	message?.successful_payment
+		Procceed with user tier
 */
 
 
