@@ -16,8 +16,7 @@ async function fetchUserProfile(_initData, _botName){
 	try{
 		response = await fetch('https://minibot-authgate.nikolayr.workers.dev/', {
 			headers: {
-				'X-Telegram-Init-Data': _initData,
-				'bound-to-bot': '_botName'
+				'X-Telegram-Init-Data': _initData
 			}
 		});
 	} catch(e){
