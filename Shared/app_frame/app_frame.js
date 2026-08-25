@@ -1,11 +1,17 @@
 /*
-ready
-disableVerticalSwipes
-requestFullscreen
+Flow
+	TG ready
+	Init ui/ux
+	Procceed with authentication
+
+Init ui/ux
+	disableVerticalSwipes
+	requestFullscreen
 */
 
 
 
+//// +FUNCTIONS
 
 async function procceedAuthenticate(_initData, _botName){
 	errlog(`"${_botName}" initData: ${decodeURIComponent(JSON.stringify(tg.initData))}`);
