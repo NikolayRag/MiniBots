@@ -2,17 +2,34 @@
 
 	Bots/Apps List
 		@locker_minibot (Profile and Payments)
+			*list_app
 		@colors_minibot
-			colorpicker
-			sticker
+			*list_app
+			picker_app
+			sticker_app
 		@live_minibot
-			timer
-			tasks
-			urlmonitor
+			*list_app
+			timer_app
+			tasks_app
+			urlmonitor_app
 		@letters_minibot
-			QR
+			*list_app
+			QR_app
 		@numbers_minibot
-			dice
+			*list_app
+			dice_app
+
+list_app is a tools list displayed in every bot including profile.
+It's navigated among all tools groups.
+
+	List Structure
+		Group 1
+			Tool 1a, ...
+		Group 2
+			...
+		...
+
+Group name is used to navigate to at opening.
 
 
 ## WEBAPP AUTHENTICATION ##
