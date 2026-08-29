@@ -68,10 +68,10 @@ const CATALOG = {
         tools: [
             {
                 id: 'color-picker',
-                name: 'Пипетка',
-                description: 'Определение цвета',
+                name: 'Color Picker',
+                description: 'Define color space',
                 icon: ICONS.dropper,
-                url: 'https://example.com/color-picker'
+                url: 'https://nikolayrag.github.io/MiniBots/Apps/colors_picker/webapp/app_colorpicker.html'
             },
             {
                 id: 'gradient',
