@@ -34,8 +34,9 @@
 --authGate is a standalone gate to verify WebApps request to deal with TG and data.
 
 --
---list is the same WebApp used at Main and Menu for every ~minibot. 
-It displays all tools grouped by collection and allow navigation to any.
+--list displays all tools grouped by collection and allow navigation to any.
+It is the same WebApp used at Main and Menu for every ~minibot. 
+
 
 	List Structure
 		Group 1
@@ -44,9 +45,10 @@ It displays all tools grouped by collection and allow navigation to any.
 			...
 		...
 
-Group name is used to navigate to at opening.
+Group name is used to initial navigation.
 
-	minibots_list application
+	
+	 application
 		Name
 			minibots_list
 		Direct Link
@@ -64,7 +66,6 @@ Group name is used to navigate to at opening.
 			Compact
 		Menu button title
 			list
-
 
 --
 --locker, --colors, ... - are Bot's webhook workers to serve TG.
