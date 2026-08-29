@@ -79,26 +79,27 @@ AuthGate Worker handles all Minibots Tokens for Webapp authentication.
 
 ## ENVIRONMENT #
 
-	###### BOT_TOKEN
-.....
+As needed:
 
-###### TG_URL  
+--
+BOT_TOKEN
+* .....
+
+--
+TG_URL  
 * https://api.telegram.org/bot
 
-###### WEBAPP_URL  
-
+--
 * https://nikolayrag.github.io/MiniBots/Apps/ColorPicker/webapp/app_colorpicker.html
 
 
-## Worker
+--
+Workers
 
-```Auth worker is at Profile_minibot site, serving all related Bots and Apps access.```
-
-* Colors_minibot auth
-	* https://minibots-auth.nikolayr.workers.dev
-
-* Colors_minibot worker
-	* https://minibots-colorpickers.nikolayr.workers.dev/
+Sysem
+	https://minibot-authgate.nikolayr.workers.dev/
+	https://minibot-locker.nikolayr.workers.dev/
+	https://minibots-colorpickers.nikolayr.workers.dev/
 
 ```
 Set Webhook:
