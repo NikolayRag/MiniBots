@@ -19,3 +19,6 @@
 -worker, template, web_app 8: +0 "Apps\ColorPicker\worker\tgbot-getcolors.js" Ki 26/08/16 06:26:35
 	make standalone app capable of sending message to bot (requestWriteAccess)
 
+ authenticate 9: +0 "Apps\__authGate\worker\authenticate.js" Ki 26/08/29 02:55:34
+	use JWT instead of shortliving hash
+

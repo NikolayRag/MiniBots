@@ -1,3 +1,4 @@
+//  todo 9 (authenticate) +0: use JWT instead of shortliving hash
 /*
 Args:
 	_initData: tg.initData from Webapp as URLSearchParams
