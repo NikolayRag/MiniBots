@@ -215,7 +215,8 @@ function openTool(tool) {
     */
 
     if (tool.url) {
-        Telegram.WebApp.openLink(tool.url);
+        //Telegram.WebApp.openLink(tool.url);
+        Telegram.WebApp.openTelegramLink(tool.url);
     }
 }
 
