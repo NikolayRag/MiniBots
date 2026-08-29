@@ -71,7 +71,7 @@ const CATALOG = {
                 name: 'Color Picker',
                 description: 'Define color space',
                 icon: ICONS.dropper,
-                url: 'https://nikolayrag.github.io/MiniBots/Apps/colors_picker/webapp/app_colorpicker.html'
+                url: 'https://t.me/colorpicker_minibot/colorpicker'
             },
             {
                 id: 'gradient',
