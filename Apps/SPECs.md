@@ -46,6 +46,26 @@ It displays all tools grouped by collection and allow navigation to any.
 
 Group name is used to navigate to at opening.
 
+	minibots_list application
+		Name
+			minibots_list
+		Direct Link
+			https://t.me/Locker_minibot/minibots_list
+		Description
+			~minibots service app
+		WebApp URL,
+		@Locker_minibot Mini App URL,
+		@Locker_minibot Menu Button URL
+			https://nikolayrag.github.io/MiniBots/Apps/--list/webapp/app_list.html?mode=compact
+		@*_minibot Mini App URL,
+		@*_minibot Menu Button URL
+			https://nikolayrag.github.io/MiniBots/Apps/--list/webapp/app_list.html?mode=compact&group=*
+		Mini App mode
+			Compact
+		Menu button title
+			list
+
+
 --
 `__locker, __colors, ...` are Bot's webhook workers to serve TG.
 
