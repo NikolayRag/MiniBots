@@ -2,39 +2,39 @@
 
 	Bots/Apps List
 		-
-			__authGate
+			--authGate
 
 		@locker_minibot (Profile and Payments)
-			__locker
-			* __list
+			--locker
+			* --list
 			owner_app
 			admin_app
 		@colors_minibot
-			__colors
-			* __list
+			--colors
+			* --list
 			picker_app
 			sticker_app
 		@live_minibot
-			__live
-			* __list
+			--live
+			* --list
 			timer_app
 			tasks_app
 			urlmonitor_app
 		@letters_minibot
-			__letters
-			* __list
+			--letters
+			* --list
 			QR_app
 		@numbers_minibot
-			* __numbers
-			* __list
+			* --numbers
+			* --list
 			dice_app
 
 
 --
-`__authGate` is a standalone gate to verify WebApps request to deal with TG and data.
+--authGate is a standalone gate to verify WebApps request to deal with TG and data.
 
 --
-`__list` is the same WebApp used at Main and Menu for every ~minibot. 
+--list is the same WebApp used at Main and Menu for every ~minibot. 
 It displays all tools grouped by collection and allow navigation to any.
 
 	List Structure
@@ -67,7 +67,9 @@ Group name is used to navigate to at opening.
 
 
 --
-`__locker, __colors, ...` are Bot's webhook workers to serve TG.
+--locker, --colors, ... - are Bot's webhook workers to serve TG.
+
+
 
 
 ## WEBAPP AUTHENTICATION ##
