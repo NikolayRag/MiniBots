@@ -14,20 +14,19 @@
 		+ Payments
 		+ Authentication
 		+ App Frame
-		Collection Menu App
+		+ List App
 
 
 	Plans and Accounting
 		Apps sharing single User Account
-		Account moderation
+		Right-based Account Moderation
 		Plan Tier moderation
 
 
 	Hollow Minibot
 		Interface Frame
-		Navigation
+		Service UX
 		Tier state and change reaction
-
 
 
 	x App
