@@ -1,12 +1,19 @@
 /*
 
+
 Flow branches
-	/start
-		sendInvoice
-	update.pre_checkout_query
-		answerPreCheckoutQuery
-	message?.successful_payment
-		Procceed with user tier
+	Offer Payment Cycle
+	Provide /User Profile/
+
+
+User Profile
+	Tier info
+	
+	
+Offer Payment Cycle
+	Send Invoice
+	React on update.pre_checkout_query
+	procceed message?.successful_payment
 */
 
 
