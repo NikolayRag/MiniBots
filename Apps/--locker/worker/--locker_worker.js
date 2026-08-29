@@ -1,4 +1,5 @@
 // =todo 10 (locker) +0: provide owner profile
+// =todo 12 (locker) +0: migrate from account_minibot
 /*
 
 
