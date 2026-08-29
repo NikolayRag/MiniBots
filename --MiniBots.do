@@ -28,3 +28,6 @@
 =authgate 11: +0 "Apps\--authGate\worker\--authGate_worker.js" Ki 26/08/29 06:36:32
 	provide owner profile from locker worker
 
+=locker 12: +0 "Apps\--locker\worker\--locker_worker.js" Ki 26/08/29 06:47:45
+	migrate from account_minibot
+
