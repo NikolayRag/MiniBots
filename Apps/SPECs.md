@@ -9,18 +9,18 @@
 			* --list
 			owner_app
 			admin_app
-		@colors_minibot
+		Visual, @colors_minibot
 			--colors
 			* --list
 			picker_app
 			sticker_app
-		@live_minibot
+		Action, @live_minibot
 			--live
 			* --list
 			timer_app
 			tasks_app
 			urlmonitor_app
-		@letters_minibot
+		Logic, @letters_minibot
 			--letters
 			* --list
 			QR_app
@@ -31,7 +31,7 @@
 
 
 --
---authGate is a standalone gate to verify WebApps request to deal with TG and data.
+--authGate is a standalone gate to verify WebApps request to deal with TG and data. It provide tier plan to Webapp.
 
 --
 --list displays all tools grouped by collection and allow navigation to any.
@@ -48,7 +48,7 @@ It is the same WebApp used at Main and Menu for every ~minibot.
 Group name is used to initial navigation.
 
 	
-	 application
+	 List application
 		Name
 			minibots_list
 		Direct Link
@@ -65,19 +65,23 @@ Group name is used to initial navigation.
 		Mini App mode
 			Compact
 		Menu button title
-			list
+			~list
 
 --
 --locker, --colors, ... - are Bot's webhook workers to serve TG.
 
 
+## PLANS ##
+
+Owner state is defined by level.
+Level is normaly set by payment, that is handled by --locker. Level can be moderated in addition.
+
+Other function of --locker is to provide User Profile with Tier State to --authGate request. 
 
 
-## WEBAPP AUTHENTICATION ##
-
-	WebApp request flow
+	Authentication
 		WebApp
-		AuthGate Worker
+		AuthGate
 		Endpoints Workers
 			Profile Worker
 			BotX Worker
