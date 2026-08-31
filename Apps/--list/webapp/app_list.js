@@ -7,7 +7,7 @@
 
 const params = new URLSearchParams(location.search);
 
-let currentGroup = params.get('group');
+let currentGroup = params.get('startapp');
 const title = document.getElementById('title');
 const content = document.getElementById('content');
 const back = document.getElementById('back');
@@ -196,7 +196,7 @@ function openGroup(groupId) {
 
     const url = new URL(location.href);
 
-    url.searchParams.set('group', groupId);
+    url.searchParams.set('startapp', groupId);
 
     history.pushState({}, '', url);
 
@@ -227,7 +227,7 @@ function openGroups() {
 
     const url = new URL(location.href);
 
-    url.searchParams.delete('group');
+    url.searchParams.delete('startapp');
 
     history.pushState({}, '', url);
 
@@ -241,7 +241,7 @@ back.addEventListener('click', openGroups);
 window.addEventListener('popstate', () => {
 
     currentGroup =
-        new URLSearchParams(location.search).get('group');
+        new URLSearchParams(location.search).get('startapp');
 
     render();
 });
