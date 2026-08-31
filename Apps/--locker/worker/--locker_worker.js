@@ -35,7 +35,7 @@ export default {
 
 				title: "MiniTools Pro",
 				description: "Pro access for 30 days",
-				payload: "pro:${message.from.id}:${Date.now()}",
+				payload: `pro:${message.from.id}:${Date.now()}`,
 
 				currency: "XTR",
 
@@ -90,7 +90,7 @@ export default {
 
 async function telegram(token, method, body) {
 	const response = await fetch(
-		"https://api.telegram.org/bot${token}/${method}",
+		`https://api.telegram.org/bot${token}/${method}`,
 		{
 			method: "POST",
 			headers: {
