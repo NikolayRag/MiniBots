@@ -7,7 +7,7 @@
 
 const params = new URLSearchParams(location.search);
 
-let currentGroup = params.get('startapp');
+let currentGroup;
 const title = document.getElementById('title');
 const content = document.getElementById('content');
 const back = document.getElementById('back');
@@ -193,13 +193,13 @@ function createItem(item) {
 function openGroup(groupId) {
 
     currentGroup = groupId;
-
+/*
     const url = new URL(location.href);
 
     url.searchParams.set('startapp', groupId);
 
     history.pushState({}, '', url);
-
+*/
     render();
 }
 
@@ -224,13 +224,13 @@ function openTool(tool) {
 function openGroups() {
 
     currentGroup = null;
-
+/*
     const url = new URL(location.href);
 
     url.searchParams.delete('startapp');
 
     history.pushState({}, '', url);
-
+*/
     render();
 }
 
@@ -238,6 +238,7 @@ function openGroups() {
 back.addEventListener('click', openGroups);
 
 
+/*
 window.addEventListener('popstate', () => {
 
     currentGroup =
@@ -245,6 +246,7 @@ window.addEventListener('popstate', () => {
 
     render();
 });
+*/
 
 
 /* =========================================================
@@ -267,7 +269,7 @@ function escapeHTML(value) {
    ========================================================= */
 
 Telegram.WebApp.ready();
-
+currentGroup = Telegram.WebApp.initDataUnsafe.start_param;
 /*
     Намеренно НЕ вызываем:
 
