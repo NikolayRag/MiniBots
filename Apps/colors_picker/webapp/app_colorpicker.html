@@ -16,8 +16,8 @@
 
 	<script src="https://telegram.org/js/telegram-web-app.js"></script>
 
-	<link rel="stylesheet" href="_app_frame.css">
-	<link rel="stylesheet" href="_app_colorpicker.css">
+	<link rel="stylesheet" href="app_frame.css">
+	<link rel="stylesheet" href="app_colorpicker.css">
 </head>
 
 <body>
@@ -45,8 +45,8 @@
     <div class="row" style="display:block"><span class="label">Presets</span><div class="presets" id="presets"></div></div>
     <p class="hint">Canonical state: linear RGB. Each sample owns its rendered plane and strip canvas.</p>
   </section> <!-- -->
-  <div id="logContainer" style="display:none">Log</div>
 	</main>
+  <div id="logContainer" style="z-order:1000;">Log</div>
 
 </body>
 
@@ -54,5 +54,5 @@
 	const botBound = 'colorpicker';
 </script>
 <script src="app_frame.js"></script>
-<script src="_app_colorpicker.js"></script>
+<script src="app_colorpicker.js"></script>
 </html>
