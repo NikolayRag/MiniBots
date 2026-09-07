@@ -3,7 +3,7 @@
 Minibots are tools for simple tasks. 
 
 	Stages:
-	> a. @one_minibot > Picker app
+	> a. @one_minibot > main/menu: Picker app
 	  b. @one_minibot > list of apps -> Picker app, +
 	  c. @one_minibot > (account/moder/admin); groups
 			@x_minibot > list of apps > apps
