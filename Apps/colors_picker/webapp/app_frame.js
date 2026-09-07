@@ -1,3 +1,5 @@
+//  todo 16 (microfeature, admin, finalize) +0: Logging place, visible by some action
+
 /*
 Flow
 	TG ready
@@ -12,7 +14,7 @@ Init ui/ux
 
 
 //// +FUNCTIONS
-
+//  todo 17 (finalize) +0: make Auth pass a request to Auth-Gate and receive answer
 async function procceedAuthenticate(_initData, _botName){
 	errlog(`"${_botName}" initData: ${decodeURIComponent(JSON.stringify(tg.initData))}`);
 

@@ -1,4 +1,5 @@
-// =todo 11 (authgate) +0: provide owner profile from locker worker
+//  todo 13 (authenticate, microfeature) +0: provide sequental JWT access
+// =todo 11 (finalize) +0: Make AuthGate to procceed request and return result
 /*
 Environment (env)
 	.ALLOWED_ORIGIN

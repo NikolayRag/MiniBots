@@ -1,3 +1,6 @@
+//  todo 14 (integration, toreview) +0: Make initial navigation respect to ?startapp=
+// =todo 18 (finalize) +0: implement list as main/menu app
+
 //import { CATALOG, ICONS } from './catalog.js';
 
 
