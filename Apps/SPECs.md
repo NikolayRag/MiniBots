@@ -1,33 +1,40 @@
 ## BOTS/APPS LIST
 
+	@botname
+		--botname, chat worker
+		--list, tools navigation webapp
+			profile_app
+			admin_app
+			instrument_app
+
 	Bots/Apps List
 		-
 			--authGate
-
 		@locker_minibot (Profile and Payments)
 			--locker
 			* --list
+				x_app
 			owner_app
 			admin_app
-		Visual, @colors_minibot
-			--colors
+		--- further Grouping ---
+		@visual_minibot
+			--visual
 			* --list
-			picker_app
-			sticker_app
-		Action, @live_minibot
-			--live
+		@action_minibot
+			--action
 			* --list
-			timer_app
-			tasks_app
-			urlmonitor_app
-		Logic, @letters_minibot
-			--letters
+		@logic_minibot
+			--logic
 			* --list
-			QR_app
-		@numbers_minibot
-			* --numbers
-			* --list
-			dice_app
+
+	Apps
+		picker_app
+		tgsticker_app
+		QR_app
+		dice_app
+		timer_app
+		tasks_app
+		urlmonitor_app
 
 
 --
@@ -52,23 +59,23 @@ Group name is used to initial navigation.
 		Name
 			minibots_list
 		Direct Link
-			https://t.me/Locker_minibot/minibots_list
+			= https://t.me/Locker_minibot/minibots_list
 		Description
 			~minibots service app
 		WebApp URL,
 		@Locker_minibot Mini App URL,
 		@Locker_minibot Menu Button URL
-			https://nikolayrag.github.io/MiniBots/Apps/--list/webapp/app_list.html?mode=compact
+			= https://nikolayrag.github.io/MiniBots/Apps/--list/webapp/app_list.html?mode=compact
 		@*_minibot Mini App URL,
 		@*_minibot Menu Button URL
-			https://nikolayrag.github.io/MiniBots/Apps/--list/webapp/app_list.html?mode=compact&group=*
+			= https://nikolayrag.github.io/MiniBots/Apps/--list/webapp/app_list.html?mode=compact&startapp=*
 		Mini App mode
 			Compact
 		Menu button title
 			~list
 
 --
---locker, --colors, ... - are Bot's webhook workers to serve TG.
+--locker, --visual, ... - are Bot's webhook workers to serve TG.
 
 
 ## PLANS ##
@@ -139,7 +146,9 @@ Set Webhook:
 
 ## todo
 // -todo 3 (manage) +0: move colorpicker app to @colors_minibot  
+// -     4 (ux, colorpicker) +0: return basic colors to bot from colorpicker  
 // -todo 4 (ux, colorpicker) +0: return basic colors to bot from colorpicker  
+// -     5 (ux, colorpicker, manage) +0: make return harmonic palette as an experemental feature (extended candidate /testers should have pro reward/)  
 // -todo 5 (ux, colorpicker, manage) +0: make return harmonic palette as an experemental feature (extended candidate /testers should have pro reward/)  
 // =todo 6 (profile) +0: bind pro state to extended features  
-//  todo 7 (promote) +0: spam minipots
+//  todo 7 (promote) +0: spam minipots  

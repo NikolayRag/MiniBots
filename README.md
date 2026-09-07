@@ -1,6 +1,14 @@
 # Small Tools TG Bots collection
 
 Minibots are tools for simple tasks. 
+
+	Stages:
+	> a. @one_minibot > Picker app
+	  b. @one_minibot > list of apps -> Picker app, +
+	  c. @one_minibot > (account/moder/admin); groups
+			@x_minibot > list of apps > apps
+
+
 They're grouped by effect they make.
 
 Groups of use:
